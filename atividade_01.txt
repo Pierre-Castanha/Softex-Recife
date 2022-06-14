@@ -1,0 +1,32 @@
+Lógica de Programação e Orientação a Objetos
+
+Aluno: Pierre Leon Castanha de Lima
+
+
+Aristóteles, Sócrates e Platão estavam disputando uma competição de perguntas nas disciplinas de Física, Matemática e Química. Cada um obteve um primeiro lugar, um segundo lugar e um terceiro lugar.
+
+Sabendo que: 
+
+- Aristóteles não ficou em primeiro em Química; 
+- Sócrates perdeu para Platão em Física; 
+- Platão acertou mais que Aristóteles em Matemática.
+
+Informe quem ficou em 1º, 2º e 3º lugar em cada disciplina.
+
+1. Disciplinas:
+
+a)Física: 
+      1º Colocado: Aristóteles;
+      2º Colocado: Platão;
+      3º Colocado: Sócrates.
+      
+b)Matemática: 
+      1º Colocado: Platão;
+      2º Colocado: Sócrates;
+      3º Colocado: Aristóteles.
+
+c)Química: 
+      1º Colocado: Sócrates;
+      2º Colocado: Aristóteles;
+      3º Colocado: Platão.
+
