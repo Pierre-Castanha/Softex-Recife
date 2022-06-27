@@ -5,7 +5,7 @@
 int main() {
 
 int i, tam, *vet;
-tam = 20;
+tam = 22;
 
 srand(time(NULL));
 
