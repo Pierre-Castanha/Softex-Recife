@@ -26,9 +26,9 @@ while True:
         calculadora(num1, num2, operador)
 
         if operador == 0:
-            print('Você escolheu: SAIR!!!')
+            print(' SAIR!!!')
             exit()
         elif operador =='' or operador < 0 or operador >= 5:
-            print('Operador inválido! Escolha entre 1 a 4')
+            print('Essa Opção não existe! Escolha entre 1 a 4')
         else:
            print('O resultado: ', calculadora(num1, num2, operador))
