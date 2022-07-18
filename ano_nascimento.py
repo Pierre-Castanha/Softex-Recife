@@ -1,14 +1,17 @@
 
-def calculo_idade(nome, ano):
+from turtle import clear
 
-    if (nome != ''):
+
+def calculo_idade(nome, ano):
+    res = 0
+
+    if (nome):
         if ((ano >= 1922) and (ano <= 2021)):
             res = 2022 - ano
         else:
-            raise Exception('Ano de Nascimento deve ser entre 1922 a 2021.') 
+            raise Exception('Ano de Nascimento deve ser entre 1922 a 2021.')
     else:
             raise Exception('Nome deverá ser preeenchido!')
-   
     return res
 
 
@@ -24,7 +27,7 @@ while (prog):
         nome = str(input())
         print('Informe o ano de Nascimento: ')
         ano = int(input())
-        
+
         idade = calculo_idade(nome, ano)
 
         print('Caro(a) ' + str(nome) + ', você atualmente tem: ' + str(idade))
@@ -34,6 +37,3 @@ while (prog):
     except:
         print('dados inválidos!!')
         clear()
-
-
-
