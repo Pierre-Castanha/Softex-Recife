@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULANDO MÉDIA</title>
+    <style>
+        body {
+            font: normal 16pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Calculando a Média de Aluno</h1>
+    <input type='number' name='nota1' id='nota1'> +
+    <input type='number' name='nota2' id='nota2'>
+    <input type='button' value='Calcular' onclick='CalcularMedia()'>
+    <div id='res'>Média do Aluno: </div>
+    <div id='sit'>Situação do Aluno: </div>
+
+
+    <h1> Calculando a Nota Mínima da 3ª Prova para Passar Média </h1>
+    <input type='number' name='not1' id='not1'> +
+    <input type='number' name='not2' id='not2'>
+    <input type='button' value='Calcular' onclick='CalcularTerceiraNota()'>
+    <div id='result'>Média do Aluno: </div>
+    <div id='nota3'>Precisa para a 3ª Nota: </div>
+
+    <script>
+        function CalcularMedia() {
+            var tn1 = window.document.getElementById('nota1')
+            var tn2 = window.document.getElementById('nota2')
+            var res = window.document.getElementById('res')
+            var not1 = Number(tn1.value)
+            var not2 = Number(tn2.value)
+            var media = (not1 + not2) / 2
+            res.innerHTML = `A média do Aluno é: <strong>${media.toFixed(2)}</strong>`
+
+            if (media >= 7) {
+                sit.innerHTML = `O Aluno foi: <strong>APROVADO!</strong>`
+            } else {
+                sit.innerHTML = `O Aluno foi: <strong>REPROVADO!</strong>`
+            }
+        }
+
+        function CalcularTerceiraNota() {
+            var not1 = window.document.getElementById('not1')
+            var not2 = window.document.getElementById('not2')
+            var res = window.document.getElementById('result')
+            var not1 = Number(not1.value)
+            var not2 = Number(not2.value)
+            var result = (not1 + not2) / 2
+            res.innerHTML = `A média do Aluno é: <strong>${result.toFixed(2)}</strong>`
+
+            var notaNec = 14 - result
+            nota3.innerHTML = `Precisa para a 3ª Nota: <strong>${notaNec.toFixed(2)}</strong>`
+        }
+    </script>
+
+</body>
+
+</html>
